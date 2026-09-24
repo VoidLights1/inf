@@ -5,7 +5,7 @@ int arrlengh() {
 	int len, c, tlen;
 	scanf("%d", &len);
 	if (len < 0 || len>15) {
-		printf("Длинна массива содержет недопустимое значение, введите другое значение:");
+		printf("Длинна массива содержет недопустимое значение, введите другое значение: ");
 		return arrlengh();
 	}
 	else {
@@ -14,7 +14,7 @@ int arrlengh() {
 }
 void arrelements(int arr[], int size){
 	for(int i=0; i<size; i++){
-		printf("Введите %d элемент:", i);
+		printf("Введите %d элемент: ", i);
 		scanf("%d", &arr[i]);
 	}
 	for (int i=0; i<size; i++){
@@ -24,7 +24,7 @@ void arrelements(int arr[], int size){
 int main() {
 	int A[15],len;
 	setlocale(LC_ALL, "Russian");
-	printf("Введите длинну массива:");
+	printf("Введите длинну массива: ");
 	len = arrlengh();
 	arrelements(A,len);
 }
